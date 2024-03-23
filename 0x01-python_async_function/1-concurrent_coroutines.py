@@ -3,11 +3,12 @@
 """
 
 import asyncio
+from typing import List
 
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-async def wait_n(n: int, max_delay: int) -> float:
+async def wait_n(n: int, max_delay: int) -> List[float]:
     """wait_n: waits for a random delay between 0 and max_delay n times
 
     args:
@@ -17,5 +18,6 @@ async def wait_n(n: int, max_delay: int) -> float:
     returns:
         float: the random delay
     """
-    delays = [wait_random(max_delay) for _ in range(n)]
-    return [await delay for delay in asyncio.as_completed(delays)]
+    coroutines = [wait_random(max_delay) for _ in range(n)]
+    delays = await asyncio.gather(*coroutines)
+    return delays
