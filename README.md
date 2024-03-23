@@ -1,0 +1,15 @@
+### Back-End Specialization - backend-python
+
+**`Python`** is a high-level, interpreted programming language that is characterized by its simplicity and readability. It is a language that is also characterized as dynamic, strongly typed, object-oriented and multi-paradigm.
+
+This repository contains projects and exercises that cover the following topics:
+
+
+- [Python - Async](https://github.com/iAdamo/alx-backend-python/tree/main/0x01-python_async_function)
+
+
+#### **`NOTE`**: For mostly all programs, you will find a `maintest` directory which contains files for testing each programs respectively as they are being numbered.e.g:
+```
+adamo@enimo: backend-python$ ./maintest/0-main.js
+output is retrieved
+```
