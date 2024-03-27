@@ -4,5 +4,5 @@
 
 This repository contains projects and exercises that cover the following topics:
 
-
+- [Python - Variable Annotations](https://github.com/iAdamo/alx-backend-python/tree/main/0x00-python_variable_annotations)
 - [Python - Async](https://github.com/iAdamo/alx-backend-python/tree/main/0x01-python_async_function)
